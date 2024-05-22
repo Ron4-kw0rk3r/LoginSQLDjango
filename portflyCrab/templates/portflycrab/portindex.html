@@ -6,7 +6,7 @@
         <meta name="description" content="portafolio" />
         <meta name="author" content="Rnv" />
         <title>PortflyCrabRnv</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="../../static/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
@@ -17,7 +17,7 @@
 
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="static/css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="../../static/styles.css">
 
 
         <style>
@@ -32,14 +32,13 @@
     <body >
         <div class="particles">
             
-            <!-- Navigation-->
+           
             <!-- Particles.js has been removed due to the requirement of no JavaScript usage -->
-        
             <nav class="navbar navbar-expand-lg navbar-dark bg-onedark" id="sideNav" style="padding: 0px; color: white; background-color: #06031a;">
 
                 <a class="navbar-brand js-scroll-trigger" href="#page-top">
                     <span class="d-block d-md-none">Bryan Ronaldo</span>
-                    <span class="d-none d-md-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" style="border-radius: 50%; width: 140px; height: 140px;" src="/static/images/useralter.jpg" alt="..." /></span>
+                    <span class="d-none d-md-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" style="border-radius: 50%; width: 140px; height: 140px;" src="https://i.ibb.co/m6MrgmY/useralter.jpg" alt="..." /></span>
                 </a>
                 <h1 style="font-size: 2.2rem; color: white; padding: 15px;">¡Bienvenido</h1>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,10 +52,10 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Intereses</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Logros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Cerrar Sesión</a></li>
                     </ul>
                 </div>
             </nav>
-            
             <!-- Page Content-->
             <div class="container-fluid p-0" style="margin-top: -90px; margin-left: 15%;">
                 <!-- About-->
@@ -256,7 +255,7 @@
                 </div>
 
     <!-- Canvas para la gráfica -->
-                <div style="width: h0%; @media (max-width: 768px) { width: 50%; }">
+                <div style="width: 0%; @media (max-width: 768px) { width: 50%; }">
                     <canvas id="volumetricChart" width="300" height="300"></canvas>
                 </div>
                 

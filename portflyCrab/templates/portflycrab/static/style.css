@@ -1,0 +1,13 @@
+
+body {
+    background-color: rgba(0, 0, 0);
+}
+
+
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background: black;
+    color: white;
+}

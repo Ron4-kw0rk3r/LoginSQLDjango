@@ -5,7 +5,6 @@
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
 </h2>
 -->
-
 <h3 align="center">
         <samp>&gt; Hola, Bienvenido!, Me llamo Bryan visitame en 
                 <b><a target="_blank" href="https://github.com/Ron4-kw0rk3r/Portafolio-django">PortflyCrab</a></b>
@@ -24,6 +23,7 @@
 ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
 ![VSCode](https://img.shields.io/badge/Visual_Studio-0078d7?style=for-the-badge&logo=visual%20studio&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![SQLite3](https://img.shields.io/badge/SQLite3-003B57?style=for-the-badge&logo=sqlite&logoColor=003B57) 
 
  <!-- About me -->
  # Sobre mi
@@ -59,4 +59,6 @@ En resumen, el desarrollo de un sistema de portafolios con Django no solo propor
 4. **Escalabilidad y Mantenimiento**: Diseño del sistema pensando en la escalabilidad y facilidad de mantenimiento, gracias a la estructura modular y las buenas prácticas promovidas por Django.
 
 
+### Detalles de la base de datos SQLite3
 
+Se ha integrado SQLite3 como base de datos para este proyecto Django. SQLite3 es una base de datos ligera y de fácil configuración que se integra perfectamente con Django, facilitando el desarrollo y la gestión de la base de datos.

@@ -17,14 +17,28 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
-from .views import index
+from .views import index , main , login ,loginv , validator, register, register_user 
+from .views import portindex,main
 from .views import about , transformpdf
+from django.urls import path
+from . import views
+from django.urls import path
 
+from django.conf import settings
+from django.conf.urls.static import static
+from django.contrib import admin
+from django.urls import path
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', index, name='index'),
-    path('', about, name='about'),
-    path('', transformpdf, name='transformpdf'),
-
+    path('', views.main, name='main'),
+    path('loginv/', views.loginv, name='loginv'),
+    path('logout/', views.logout_view, name='logout'),
+    path('loginv/portindex/', views.portindex, name='loginv_portindex_redirect'),
+    path('login', views.login_view, name='login_view'),
+    path('portindex/', views.portindex, name='portindex'),
+    path('register_user/', views.register_user, name='register_user'),
+    path('validator/', views.validator, name='validator'),
+    path('register/', views.register, name='register'),
+    path('about/', about, name='about'),
+    path('transformpdf/', transformpdf, name='transformpdf'),
 ]
